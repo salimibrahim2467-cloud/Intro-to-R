@@ -6,8 +6,7 @@ df_data<-data.frame(
 
 #write to specified directory
 #filename<-"C:/Desktop/data.csv" 
-filename<-"C:/my user/Documents/data.csv"
- 
+filename<-"C:/C:\Users\PC\Documents\Saleem data frame.R.bz2/Documents/data.csv"
 write.csv(df_data,filename)
 
 #import the data.csv file into R
