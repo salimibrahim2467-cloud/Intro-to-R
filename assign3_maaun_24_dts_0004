@@ -1,0 +1,15 @@
+#Lab 3 Solution 1
+df_data<-data.frame(
+  name=c("Alice","Bob","Hauwa","Hassan","Suleiman"),
+  age= c(30,25,30,2,28),
+  location = c("USA","UK","NIGERIA","NIGER","TOGO"))
+
+#write to specified directory
+#filename<-"C:/Desktop/data.csv" 
+filename<-"C:/my user/Documents/data.csv"
+ 
+write.csv(df_data,filename)
+
+#import the data.csv file into R
+data<-read.csv(filename)#Make sure the file is in your working dirctory
+print(head(data))
