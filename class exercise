@@ -1,0 +1,26 @@
+# Function to handle login
+login <- function() {
+  attempts <- 0
+  max_attempts <- 3
+  
+  while (attempts < max_attempts) {
+    # Ask for username and password
+    username <- readline(prompt="Enter your username: ")
+    password <- readline(prompt="Enter your password: ")
+    
+    # Validate credentials
+    if (username == "abcd" && password == "1234") {
+      print("Login Successful")
+      return(TRUE)
+    } else {
+      attempts <- attempts + 1
+      print(paste("Invalid Login details. Attempts left:", max_attempts - attempts))
+    }
+  }
+  
+  print("Maximum attempts exceeded. Account locked.")
+  return(FALSE)
+}
+
+# Call the login function
+login()
