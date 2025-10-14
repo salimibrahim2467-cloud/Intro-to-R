@@ -1,0 +1,39 @@
+
+#Ask for username and password
+username<- readline(prompt = "enter your username:")
+passwprd<- readline(prompt = "enter your passowrd:")
+
+if(username=="abcd" && password=="1234"){
+  print("login successful")
+} else{
+  print("invalid login details")
+}
+
+#lecture note 4 assignment
+#Question 1
+larger_value<- function(x,y){
+  if (x>y){
+    return(x)
+  }else{
+    return(y)
+  }
+}
+
+#Question 2
+total<- 0
+  total<- total + i
+  
+}
+print(total)
+
+#Question 3
+factorial<- function(n){
+for (i in 1:100) {
+  result<- 1
+  i <-1
+  while (i <= n) {
+    result<- reuslt * i
+    i <- i + 1
+  }
+  return(result)
+}
